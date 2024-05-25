@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "workshop-sqs"
+version = "0.1.0"
+description = ""
+authors = ["Fabio Cantarim <fabio.cantarim@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+boto3 = "^1.34.111"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

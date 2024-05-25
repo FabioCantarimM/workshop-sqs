@@ -1,0 +1,16 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Principal": "*",
+        "Action": "sqs:SendMessage",
+        "Resource": "arn:aws:sqs:us-west-1:386336189988:SQS-NAME",
+        "Condition": {
+          "ArnEquals": {
+            "aws:SourceArn": "arn:aws:s3:::S3-BUCKET-NAME"
+          }
+        }
+      }
+    ]
+  }
